@@ -51,19 +51,18 @@ def show_hist():
 
 
 def show_params():
-    print('Mean: ', np.mean(sequence))
-    print('Variance: ', np.var(sequence))
-    print('Standard deviation: ', np.std(sequence))
+    print('Mean value: ', np.mean(sequence))
+    print('Variance value: ', np.var(sequence))
+    print('Standard deviation value: ', np.std(sequence))
 
 
 def main():
-    a = int(input("a: "))
-    m = int(input("m: "))
-    r0 = int(input("R0: "))
+    a = int(input("Enter 'a' value: "))
+    m = int(input("Enter 'm' value: "))
+    r0 = int(input("Enter 'R0' value: "))
     n = 1000000
 
     calculate_sequence(a, m, r0, n)
-    # print ("Sequence: ", sequence)
 
     calculate_implicit_criteria()
 
@@ -72,6 +71,8 @@ def main():
 
     aperiodic_interval = calculate_aperiodic_interval(period)
     print("Aperiodic interval: ", aperiodic_interval)
+
+    show_params()
 
     show_hist()
 
