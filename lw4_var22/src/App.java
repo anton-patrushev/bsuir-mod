@@ -1,8 +1,8 @@
 public class App {
     public static final int STATE_COUNT = 4;
     public static final double l = 2.5;
-    public static final double m = 2.;
-    public static final double m1 = 2. * m;
+    public static final double m = 2.0;
+    public static final double m1 = 2.0 * m;
     public static final double m2 = m;
 
     public static void main(String[] args) {

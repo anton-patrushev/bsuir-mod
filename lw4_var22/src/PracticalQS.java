@@ -45,7 +45,7 @@ public class PracticalQS {
     }
 
     private void changeTime(double timeToShift) {
-        if      (!serviceIsBusy[0] && !serviceIsBusy[1])
+        if (!serviceIsBusy[0] && !serviceIsBusy[1])
             stateProbabilities[0] += timeToShift;
         else if (serviceIsBusy[0] && !serviceIsBusy[1])
             stateProbabilities[1] += timeToShift;
